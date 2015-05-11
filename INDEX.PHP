@@ -2,7 +2,7 @@
 
 /*
  * Endpoint for Github Webhook URLs
- * w
+ *
  * see: https://help.github.com/articles/post-receive-hooks
  *
  */
