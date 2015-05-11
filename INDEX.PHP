@@ -1,5 +1,5 @@
 <?php
-
+//
 /*
  * Endpoint for Github Webhook URLs
  *
