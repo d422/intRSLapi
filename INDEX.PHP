@@ -1,6 +1,6 @@
 <?php
 
-/*
+/* 
  * Endpoint for Github Webhook URLs
  *  
  * see: https://help.github.com/articles/post-receive-hooks
