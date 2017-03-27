@@ -1,11 +1,3 @@
 # intRSLapi
 
-ReadMe
-
-step 1
-
-step 2
-
-step 3
-
-step 4
+Компонент modx, предназначенный для работы с API базы данных
