@@ -1,0 +1,10 @@
+Ссылка на документацию --- https://docs.modx.com/revolution/2.x/case-studies-and-tutorials/using-custom-database-tables-in-your-3rd-party-components
+
+define('MODX_BASE_PATH', dirname(dirname(dirname(dirname(dirname(__FILE__))))) . '/MODxRevolution/');
+define('MODX_CORE_PATH', MODX_BASE_PATH . 'core/');
+define('MODX_MANAGER_PATH', MODX_BASE_PATH . 'manager/');
+define('MODX_CONNECTORS_PATH', MODX_BASE_PATH . 'connectors/');
+define('MODX_ASSETS_PATH', MODX_BASE_PATH . 'assets/');
+
+MODX_BASE_PATH нужно будет указать, где вы установили MODX Revolution.
+Если вы переместили менеджер или ядро за пределы этого базового пути, вам также нужно будет настроить эти определения.

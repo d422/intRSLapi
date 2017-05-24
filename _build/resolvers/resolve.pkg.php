@@ -6,10 +6,10 @@ if ($object->xpdo) {
 
 	switch ($options[xPDOTransport::PACKAGE_ACTION]) {
 		case xPDOTransport::ACTION_INSTALL:
-			$modelPath = $modx->getOption('infodbfiles.core_path', null, $modx->getOption('core_path') . 'components/infodbfiles/') . 'model/';
+			$modelPath = $modx->getOption('infodbapi.core_path', null, $modx->getOption('core_path') . 'components/infodbapi/') . 'model/';
 
-			$modx->addPackage('infodbfiles', $modelPath);
-        		$modx->addExtensionPackage('infodbfiles', $modelPath);
+			$modx->addPackage('infodbapi', $modelPath);
+        	$modx->addExtensionPackage('infodbapi', $modelPath);
 
 			$manager = $modx->getManager();
 
@@ -20,7 +20,7 @@ if ($object->xpdo) {
 
 		case xPDOTransport::ACTION_UNINSTALL:
     		    if ($modx instanceof modX) {
-    		        $modx->removeExtensionPackage('infodbfiles');
+    		        $modx->removeExtensionPackage('infodbapi');
     		    }
 		    break;
 	}

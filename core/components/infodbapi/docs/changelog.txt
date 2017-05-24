@@ -1,1 +1,5 @@
-Changelog for WebDAV.
+Changelog for infoDBapi.
+
+1.0.0 beta 1 (04.10.2012)
+===============================
+* Initial release

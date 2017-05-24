@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model package="infodbapi" baseClass="xPDOObject" platform="mysql" defaultEngine="MyISAM" phpdoc-package="infodbapi" phpdoc-subpackage="model">
+    <object class="infoDBfilesMediaSource" extends="modMediaSource"></object>
+</model>

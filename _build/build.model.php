@@ -1,19 +1,19 @@
 <?php
 
 if (!defined('MODX_BASE_PATH')) {
-	require 'build.config.php';
+    require 'build.config.php';
 }
 
 /* define sources */
 $root = dirname(dirname(__FILE__)) . '/';
 $sources = array(
-	'root' => $root,
-	'build' => $root . '_build/',
-	'source_core' => $root . 'core/components/' . PKG_NAME_LOWER,
-	'model' => $root . 'core/components/' . PKG_NAME_LOWER . '/model/',
-	'schema' => $root . 'core/components/' . PKG_NAME_LOWER . '/model/schema/',
-	'xml' => $root . 'core/components/' . PKG_NAME_LOWER . '/model/schema/' . PKG_NAME_LOWER . '.mysql.schema.xml',
-	'xml2' => $root . 'core/components/' . PKG_NAME_LOWER . '/model/schema/' . PKG_NAME_LOWER . '.sqlsrv.schema.xml',
+    'root' => $root,
+    'build' => $root . '_build/',
+    'source_core' => $root . 'core/components/' . PKG_NAME_LOWER,
+    'model' => $root . 'core/components/' . PKG_NAME_LOWER . '/model/',
+    'schema' => $root . 'core/components/' . PKG_NAME_LOWER . '/model/schema/',
+    'xml' => $root . 'core/components/' . PKG_NAME_LOWER . '/model/schema/' . PKG_NAME_LOWER . '.mysql.schema.xml',
+    'xml2' => $root . 'core/components/' . PKG_NAME_LOWER . '/model/schema/' . PKG_NAME_LOWER . '.sqlsrv.schema.xml',
 );
 unset($root);
 
@@ -26,8 +26,9 @@ $modx->getService('error', 'error.modError');
 $modx->setLogLevel(modX::LOG_LEVEL_INFO);
 $modx->setLogTarget('ECHO');
 $modx->loadClass('transport.modPackageBuilder', '', false, true);
+
 if (!XPDO_CLI_MODE) {
-	echo '<pre>';
+    echo '<pre>';
 }
 
 /** @var xPDOManager $manager */
@@ -45,5 +46,5 @@ $generator->parseSchema($sources['xml2'], $sources['model']);
 
 $modx->log(modX::LOG_LEVEL_INFO, 'Model generated.');
 if (!XPDO_CLI_MODE) {
-	echo '</pre>';
+    echo '</pre>';
 }
